@@ -1,0 +1,18 @@
+.Cast_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Cast_item {
+  width: 150px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Cast_img {
+  width: 130px;
+  max-height: 190px;
+  object-fit: cover;
+}

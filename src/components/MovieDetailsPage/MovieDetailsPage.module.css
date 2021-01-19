@@ -1,0 +1,25 @@
+.MovieDetailsPage {
+  display: flex;
+  flex-direction: row;
+}
+
+.MovieDetailsPage_btn{
+  margin-bottom: 10px;
+}
+
+.MovieDetailsPage_img {
+  height: 300px;
+  margin-right: 30px;
+}
+
+.MovieDetailsPage_title {
+  font-size: large;
+  font-weight: 700;
+}
+
+.MovieDetailsPage_genres{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
