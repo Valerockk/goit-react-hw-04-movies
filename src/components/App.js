@@ -1,4 +1,4 @@
-import React, {lazy, Suspense } from "react";
+import React from "react";
 import Layout from "./Layout/Layout";
 import { Switch, Route } from "react-router-dom";
 import routes from "../router";
@@ -9,13 +9,10 @@ import MovieDetailsPage from "./MovieDetailsPage/MovieDetailsPage";
 import Cast from "./Cast/Cast";
 import Reviews from "./Reviews/Reviews";
 
-// const MovieDetailsPage = lazy(() =>
-//   import("./MovieDetailsPage/MovieDetailsPage")
-// );
+
 
 const App = () => (
   <Layout>
-    <Suspense fallback={<div>Загрузка...</div>}>
       <Switch>
         <Route path={routes.home} exact component={HomePage}></Route>
         <Route path={routes.movies} exact component={MoviesPage}></Route>
@@ -23,7 +20,6 @@ const App = () => (
         <Route path={routes.cast} component={Cast}></Route>
         <Route path={routes.reviews} component={Reviews}></Route>
       </Switch>
-    </Suspense>
   </Layout>
 );
 
